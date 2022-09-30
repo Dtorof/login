@@ -53,7 +53,9 @@ var app = new Vue({
               }
             },
             validateCredentials(user, key) {
-             
+             let name =this.name;
+              let password=this.password;
+              let picture=this.image;
               this.login();
               let loguedUser = [];
               let res = this.arrayData.filter(
@@ -61,10 +63,8 @@ var app = new Vue({
               );
               loguedUser = [...res];
               console.log(loguedUser)
-              console.log(loguedUser[0].picture.large)
-              this.logi = '1'
-              this.image = loguedUser[0].picture.large
-              this.name = loguedUser[0].name.first + loguedUser[0].name.last
+             
+          
               if(loguedUser.length === 0){
                 this.message(
                   "Oops",
@@ -74,6 +74,7 @@ var app = new Vue({
                   "error"
                 );
                 }else{
+                  
                   this.message(
                     "¡Enhorabuena!",
                     2200,
@@ -81,6 +82,9 @@ var app = new Vue({
                     "Ingreso exitoso",
                     "success"
                   ) ;
+                  this.logi = '1'
+                  this.image = loguedUser[0].picture.large
+                  this.name = loguedUser[0].name.first + loguedUser[0].name.last
                 }
                 
              
