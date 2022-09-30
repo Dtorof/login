@@ -1,0 +1,27 @@
+#app{
+    max-width:  45%;
+    background-color: #4c82c2!important;
+    opacity: 0.9;
+}
+#user{
+    width: 30vh;
+    height: 30vh;
+    display:block;
+    margin:auto;
+}
+
+#conterti{
+    max-width:  60%;
+    opacity: 1!important;
+    background-color: #fffbfb !important;
+    
+    
+
+}
+
+body{
+   
+    background-color: #ffffff;
+background-image: url("https://www.transparenttextures.com/patterns/xv.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
